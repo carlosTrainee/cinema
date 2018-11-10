@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+.main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top:5%;
+}
+.main h1{
+    margin-bottom:5%;
+    text-align:center;
+    background-color:rgb(181, 21, 21,0.9);
+    border:5px solid red;
+    border-radius:20px;
+    width:70%;
+    font-style: italic;
+    color:white;
+    font-family:impact;
+    box-shadow:0px 0px 5px red;
+    text-shadow: 2px 2px black;
+    font-size: 50px;
+}
+.row {
+    margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.content:hover{
+    border:2px solid rgb(255,255,255,0.5);
+    cursor:pointer;
+	background-color:rgb(60, 71, 59);
+    transition:all ease 250ms;
+	width:90%;
+	height:90%;
+    text-shadow:0px 0px 20px blue;
+    border-radius:20px;
+}
+.dub{
+    width:45%;
+    border:2px solid black;
+    padding:2%;
+    height:5%;
+    display:inline;
+    text-transform:uppercase;
+    background-color:green;
+    font-style:italic;
+    border-radius:10px;
+    font-weight:bold;
+}      
+.leg{
+    width:45%;
+    padding:2%;
+    border:2px solid black;
+    height:5%;
+    display:inline;
+    text-transform:uppercase;
+    background-color:blue;
+    border-radius:10px;
+    font-style:italic;
+    font-weight:bold;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    background-color:rgb(0,0,0,.7);
+    border-radius:20px;
+    border:2px solid black;
+}
+
+.content {
+    background-color: rgb(0,0,0);
+    color:white;
+    padding: 10px;
+    border:2px solid black;
+	width:85%;
+	height:90%;
+	transition:all ease 250ms;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: black;
+    cursor: pointer;
+    transition:all ease 250ms;
+    box-shadow:0px 0px 5px black;
+    margin-left:1%;
+    width:15%;
+    font-family:comic-sans;
+    font-weight:400;
+}
+h4{
+    font-size:1vw;
+    font-style:italic;
+}
+#myBtnContainer img{
+    width:10%;
+    height:10%;
+    position: absolute;
+    top: 25%;
+    left: 90%;
+	transform: translate(-50%, -50%);
+    background-color:rgb(214, 24, 24,0.5);
+    border-radius:20px;
+    transition:all ease 250ms;
+    box-shadow:0px 0px 25px red;
+}
+#myBtnContainer img:hover{
+    background-color:rgb(214, 195, 25,0.5);
+    box-shadow:0px 0px 25px yellow;
+    transition:all ease 250ms;
+}
+.btn:hover {
+    background-color: rgb(181, 21, 21,0.9);
+    transition:all ease 250ms;
+}
+
+.btn.active {
+  background-color:rgb(181, 21, 21);
+  color: white;
+  box-shadow:0px 0px 5px red;
+}
+.row img{
+    width:95%;
+    height:11em;
+	border:2px solid grey;
+}

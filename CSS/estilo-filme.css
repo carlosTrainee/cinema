@@ -1,0 +1,115 @@
+body{
+	color:white;
+}
+.filme{
+	width:35%;
+	height:50%;
+	position: absolute;
+    top: 50%;
+    left: 25%;
+	transform: translate(-50%, -50%);
+}
+video{
+	height:auto;
+	border:10px solid black;
+}
+.filme img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    border:3px solid black;
+    box-shadow:0px 0px 5px red;
+}
+.sinopse{
+	float:left;
+	width:40%;
+	height:35%;
+	border:15px solid transparent;
+    border-image: url(../Imagens/borda2.png) 15% round;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaMmax6mrxN2Jtxv4DCLg3v8aEo34QqGbYonjogTKawUePxtX);
+    background-size:100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+	transform: translate(-50%, -50%);
+}
+.sinopse h1{
+    width:100%;
+    font-family:impact;
+	font-style:italic;
+	text-shadow:0px 0px 20px red;
+    margin:0;
+}
+.duracao{
+	display:inline-block;
+	margin-right:5%;
+	margin-bottom:-1%;	
+	letter-spacing:1px;
+	font-family:fantasy;
+	text-shadow:0px 0px 20px blue;
+}
+.lancamento{
+	letter-spacing:1px;
+	font-family:fantasy;
+	border-radius:5px;
+	display:inline-block;
+	text-shadow:0px 0px 20px blue;
+	margin-right:5%;
+}
+.sinopse .resumo{
+	width:94%;
+	height:50%;
+	font-size:1vw;
+	padding:3%;
+	background-color:rgb(0,0,0,1);
+	border-radius:10px;
+}
+.sinopse .resumo text{
+	font-style:italic;
+}
+.sinopse .resumo h1{
+	font-size:1.5vw;
+}
+.sinopse img{
+    width:7%;
+    height:11%;
+}
+.voltar{
+	position: absolute;
+    top: 75%;
+    left: 60%;
+	transform: translate(-50%, -50%);
+    background-color: rgb(167, 174, 186, .8);
+    border-radius:10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.voltar:hover{
+    color:black;
+    background-color:rgb(255,30,20,.8);
+}
+.compra{
+	position: absolute;
+    top: 75%;
+    left: 75%;
+	transform: translate(-50%, -50%);
+    width:15%;
+    height:10%;
+}
+.compra img{
+    width:100%;
+    height:100%;
+}
+.rodape{
+    width:100%;
+    height:20%;
+    background-color:rgb(37, 57, 122,0.8);
+    border-top:3px solid rgb(37, 57, 122);
+    border-radius:10px;
+}

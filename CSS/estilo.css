@@ -1,0 +1,194 @@
+body{
+	background-image:url("../Imagens/melhor-sala.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.welcome-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../Imagens/fundo-inicio.jpg"); 
+    background-size:100% 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.content-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	width:100%;
+	height: 5%;
+}
+
+.fly-in-text{
+    list-style: none;
+}
+
+.entrar{
+    top:90%;
+    left:58%;
+    position:absolute;
+    transform: translate( -50% , 250%);
+}
+
+.cartaz{
+    top:90%;
+    left:41%;
+    position:absolute;
+    transform: translate( -50% , 250%);    
+}
+.
+.fly-in-text li{
+    font-family:impact;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 5vw;
+    color: #fff;
+    opacity: 1;
+	transition: all 3s ease;
+     text-shadow:0px 0px 20px black;
+}
+a{
+    background-color: #4CAF50; 
+    border: 2px solid black;
+    border-radius:10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    width:10%;
+    display:inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+a:hover{
+    background-color:rgb(255, 225, 2,0.8);
+}
+
+.content-hidden .fly-in-text li {opacity: 0; }
+.content-hidden .fly-in-text li:nth-child(1) { transform: transalte3d(-60px, 0, 0);}
+.content-hidden .fly-in-text li:nth-child(2) { transform: transalte3d(-30px, 0, 0);}
+.content-hidden .fly-in-text li:nth-child(3) { transform: transalte3d(0px, 0, 0);}
+.content-hidden .fly-in-text li:nth-child(4) { transform: transalte3d(30px, 0, 0);}
+.content-hidden .fly-in-text li:nth-child(5) { transform: transalte3d(60px, 0, 0);}
+
+.codigoQR{
+    float:left;
+    width:13%;
+    height:20%;
+    background-color:rgb(255,255,255,0.9);
+    border:5px ridge black;
+}
+.codigoQRsobre{
+    float:left;
+    font-size:.9vw;
+    color:white;
+    font-family: monospace;
+    width:100%;
+    background-color:rgb(0,0,0);
+    border:2px solid white;
+    border-radius:5px;
+}
+.logotipo{
+	position:relative;
+	top:10%;
+	left:0%;
+	transform: translate(-50%, -50%);
+    float:left;
+    width:30%;
+    height:70%;
+    border-radius:20px;
+}
+.logotipo img{
+    width:100%;
+    height:70%;
+    border-radius:100px;
+}
+#caixa-login{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+    border:15px double;
+    border-color:black;
+	border-radius:50px;
+	width:50%;
+	height:40%;
+	box-shadow:0px 0px 20px rgb(209, 185, 102);
+	background-image:url(../Imagens/claquete.jpg);
+    background-size:100% 100%;
+}
+.formulario{
+	position:relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:50%;
+	height:80%;
+	border:1px solid black;
+    border-radius:10px;
+    background-color:rgb(0, 0, 0, 0.8);
+	box-shadow:0px 0px 20px black;
+}
+fieldset{
+    border:5px double rgb(255,255,255,.5);
+    border-radius:20px;
+}
+legend{
+    color:white;
+    font-size:1.3em;
+    font-family:impact;
+    letter-spacing:2px;
+    font-style:italic;
+}
+form{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+    width:50%;
+    background-color:rgb(0, 0, 0, 0.9);
+	box-shadow:0px 0px 20px black;
+    border-radius:20px;
+}
+label{
+    font-size:1.5em;
+    color:white;
+    font-family:monospace;
+    margin-right:1%;
+}
+input{
+	box-shadow:0px 0px 3px black;
+    transition:all ease .5s;
+    margin-bottom:2%;
+}
+.input2{
+    width:46%;
+}
+.input1{
+    width:50%;
+}
+button{
+    border-radius:10px;
+    border:3px solid black;
+    transition:all ease-in 100ms;
+    width:50%;
+    font-size:1em;
+    cursor:pointer;
+}
+button:hover{
+    color:white;
+    background-color:black;
+    transition:all ease-out 100ms;
+    border:3px solid white;
+}

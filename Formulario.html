@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="icon" href="Imagens/images.png">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-formulario.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-menu.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mdb.css">
+    <script>
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+  
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }
+  
+}
+</script>
+</head>
+<body>
+    <div class="logo animated fadeIn">
+        <img src="Imagens/logo.png">
+    </div>
+
+    <div class="formulario">
+                
+            <form action="action.php" id="formulario">
+                <fieldset>
+                    <legend>Registro</legend>
+                    <center>
+                    <label>CPF: </label><input type="text" maxlength="14" name="nome" OnKeyPress="formatar('###.###.###-##', this)" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn" required>
+                    <label>Nome: </label><input type="text" name="nome"  title="Favor não incluir números ou pontos" required> 
+                    <br>
+                    <label>Filme: </label>
+                    <select>
+                        <option>-</option>
+                        <option>Central do Brasil</option>
+                        <option>O Auto da Compadecida</option>
+                        <option>Bicho de Sete Cabeças</option>
+                        <option>O Quarto de Jack</option>
+                        <option>Moonlight</option>
+                        <option>A Forma de Água</option>
+                        <option>Humano-Uma Viagem pela Vida</option>
+                        <option>O Sal Da Terra</option>
+                        <option>Elena</option>
+                    </select>
+                    <label>Hora: </label>
+                    <select>
+                        <option>-</option>
+                        <option>12:00</option>
+                        <option>16:00</option>
+                        <option>19:00</option>
+                    </select>
+                    <label>Data: </label><input type="date" min="2018-11-06" max="2019-01-05">
+                    <label>Quantidade: </label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <br>
+                    <input class="voltar" type="button" onclick="Voltar()" value="Voltar">
+                        <input class="limpar" type="button" onclick="Limpar()" value="Limpar">
+                    <input class="concluir" type="submit" value="Emitir Ingresso">
+                </center>
+                </fieldset>
+            </form>
+    </div>
+		<footer>
+			<div class="direitos">
+				<h1> © 2018 Todos os direitos reservados</h1>
+				<text>* As imagens deste site foram utilizadas sem fins lucrativos.*</text>
+			</div>
+			<div class="texto">
+				<h1>Sobre nosso projeto:</h1><text> Assessorando uma nova plataforma de cinemas denominada Cinema para Todos, visando tornar público um programa de distribuição de ingressos semelhante aos de uma grande empresa distribuidora, para que a alusão seja além de incentivo uma nova forma de pensar as exibições alternativas. Levando em consideração o pensamento do crítico Millôr (2012)
+“Se se ganha dinheiro, o Cinema é uma indústria. Se se perde, é uma Arte”.
+</text>
+			</div>
+            <div class="informacao">
+                <nav>
+                    <ul>
+                        <li><img src="http://icons-for-free.com/free-icons/png/512/1071016.png"><label> R. Guarani, 735 - Conceição, Diadema - SP, 09991-060</label></li>
+                        <li><img src="https://www.freepnglogos.com/uploads/email-logo-png-13.png"><label>CinemaparaTodos@gmail.com</label></li>
+                        <li><img src="http://www.stickpng.com/assets/images/5a4525a7546ddca7e1fcbc81.png"><label>xxxx-xxxx</label><li>
+                    </ul>
+                </nav>
+            </div>
+		</footer>
+
+    <script>
+        function Voltar(){
+            window.history.back();
+        }
+        function Limpar(){
+            document.getElementById("formulario").reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "UTF-8">
+<head>
+	<link rel="icon" href="Imagens/images.png">
+    <link rel="stylesheet" type="text/css" href="CSS/mdb.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-menu.css">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo-cartaz.css">
+    <title>Cartaz</title>
+</head>
+<body>
+<center>
+    <div class="main">
+
+        <center>
+            <h1>Filmes em Cartaz </h1>
+        </center>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="selecao('todos')"> Mostrar Todos</button>
+            <button class="btn" onclick="selecao('drama')" onmouseover="cultura()">Drama</button>
+            <button class="btn" onclick="selecao('documentario')">Documentário</button>
+            <button class="btn" onclick="selecao('nacional')">Nacional</button>
+            <a href="Formulario.html">
+                <img src="Imagens/ingresso2.png">
+            </a>
+        </div>
+
+        <div class="row">
+            
+            <a href="Filmes/Filme-sempreaoseulado.html">
+                <div class="column documentario animated fadeIn">
+                    <div class="content">
+                        <img src="Imagens/ELENA.jpg">
+                        <h4>ELENA </h4>
+                        <div class="dub">Dub</div>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="Filmes/Filme-omeninodepijamalistrado.html">
+                <div class="column documentario animated fadeIn">
+                    <div class="content">
+                        <img src="Imagens/Sal.png">
+                        <h4>O SAL DA TERRA </h4>
+                        <div class="dub">Dub</div>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="Filmes/Filme-aesperadeummilagre.html">
+                <div class="column documentario animated fadeIn">
+                    <div class="content">
+                        <img src="Imagens/Humano.jpg">
+                        <h4>UMA VIAGEM PELA VIDA</h4>
+                        <div class="dub">Dub</div>
+                    </div>
+                </div>
+            </a>
+            
+            
+			<a href="Filmes/Filme-tropadeelite.html">
+             <div class="column drama animated fadeIn slow">
+                <div class="content">
+                    <img src="Imagens/Moon.jpg">
+                    <h4>A FORMA DA ÁGUA</h4>
+                    <div class="dub">Dub</div>
+                </div>
+            </div>
+			</a>
+
+			<a href="Filmes/Filme-cidadededeus.html">
+             <div class="column drama animated fadeIn slow">
+                <div class="content">
+                    <img src="Imagens/Agua.jpg">
+                    <h4>MOONLIGHT</h4>
+                    <div class="leg">Leg</div>
+                </div>
+            </div>
+  			</a>
+        
+			<a href="Filmes/Filme-faroestecabloco.html">
+            <div class="column drama animated fadeIn slow">
+                <div class="content">
+                    <img src="Imagens/Jack.jpg">
+                    <h4>O QUARTO DE JACK</h4>
+                    <div class="dub">Dub</div>
+                </div>
+            </div>
+        	</a>
+        
+			<a href="Filmes/bicho-de-sete-cabecas.html">
+            <div class="column nacional animated fadeIn slower">
+                <div class="content">
+                    <img src="Imagens/Cabeca.jpg">
+                    <h4>O BICHO DE 7 CABEÇAS</h4>
+                   	<div class="dub">Dub</div>
+                </div>
+            </div>
+        	</a>
+       
+        <a href="Filmes/Filme-compadecida.html">
+            <div class="column nacional animated fadeIn slower">
+                <div class="content">
+                    <img src="Imagens/OAuto.png">
+                    <h4>O AUTO DA COMPADECIDA</h4>
+                    <div class="dub">Dub</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="Filmes/Filme-central.html">
+            <div class="column nacional  animated fadeIn slower">
+                <div class="content">
+                    <img src="Imagens/Central.png">
+                    <h4>CENTRAL DO BRASIL</h4>
+                    <div class="dub">Dub</div>
+                </div>
+            </div> 
+        </a>
+
+
+        
+        </div>
+
+
+    </div>
+
+	
+	</center>
+    
+<script>
+selecao("todos")
+function selecao(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "todos") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

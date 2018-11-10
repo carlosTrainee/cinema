@@ -1,0 +1,88 @@
+.formulario{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border:5px solid black;
+    width:60%;
+    height:50%;
+    background-image:url(../Imagens/formulario.jpg);
+    background-size:cover;
+    box-shadow:0px 0px 10px red;
+    border-radius:50px;
+}
+form{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:100%;
+    height:70%;
+    color:white;
+}
+fieldset legend{
+    font-family:impact;
+    font-style:italic;
+    font-size:2vw;
+    color:white;
+}
+fieldset{
+    background-color:rgb(0,0,0,.8);
+    border-radius:50px;
+}
+label{
+    margin-left:2.5%;
+    margin-bottom:5%;
+}
+input{
+    margin-right:2%;
+    margin-bottom:5%;
+}
+.voltar{
+    background-color: #4CAF50; 
+    border: none;
+    border-radius:10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.voltar:hover{
+    background-color:rgba(0, 102, 255, 0.8);
+}
+.concluir{ 
+    background-color: #4CAF50;
+    border: none;
+    border-radius:10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.concluir:hover{
+    background-color:rgba(0, 102, 255, 0.8);
+}
+.limpar{
+    background-color:rgba(245, 6, 6, 0.719);
+    border: none;
+    border-radius:10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.limpar:hover{
+    background-color:rgba(255, 51, 0, 0.8);
+}
